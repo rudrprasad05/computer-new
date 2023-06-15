@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kants Rentals</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" href="/assets/icon.ico">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHXDPHNX23"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QHXDPHNX23');
+        </script>
+    </head>
+    <body id="body">
+
+        <button class="nav-open-btn" id="nav-open-btn" onclick="navOpen()">
+    <div class="hams" id="ham1"></div>
+    <div class="hams" id="ham2"></div>
+    <div class="hams" id="ham3"></div>
+</button>
+
+<nav id="nav">
+    <div class="nav-title vertical-align-text medium-font">
+        Home
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cars">Cars</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="social-media">
+        <div>
+            <a href="#">
+                <img src="/assets/instagran.png" alt="">
+            </a>
+            
+        </div>
+        <div>
+            <a href="#">
+                <img src="/assets/fb.png" alt="">
+            </a>
+            
+        </div>
+        <div>
+            <a href="tel:9952537">
+                <img src="/assets/phone.png" alt="">
+            </a>
+            
+        </div>
+        <div>
+            <a href="#"><img src="/assets/email.png" alt=""></a>
+            
+        </div>
+    </div>
+</nav>
+
+
+        <section id="landing">
+    <img src="./assets/home-bg.jpg" alt="">
+    <div class="container">
+        <p class="pink vertical-align-text" id="landing-title">Kant's Rentals</p>
+        <p class="white vertical-align-text" id="for-all">For All your Rental Needs</p>
+        <div class="button-cont">
+            <a href="cars">
+                <button class="landing-buttons">
+                    <div class="small-font vertical-align-text">
+                        Our Cars
+                    </div>
+                    
+                </button>
+            </a>
+            
+            <button class="landing-buttons">
+                <div class="small-font vertical-align-text">
+                    <a href="#contact">Book Now</a>
+                </div>
+                <div class="white-arrow-cont">
+                    <img src="./assets/white-arrow.png" alt="" srcset="">
+                </div>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section id="section2">
+        <div>
+            <p class="pink main-font vertical-align-text">Rentals</p>
+            <p class="white vertical-align-text medium-font">Whether it be luxury or sport we've got it all. Known as the best car rental company on the west coast we have cars for all occasions.</p>
+            <div>
+                <p class="pink vertical-align-text small-font"><a href="/cars">Our Car Collection</a></p>
+                <div class="white-arrow-cont">
+                    <img src="./assets/pink-arrow.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <div id="car-img">
+        <a href="#body"><img src="/assets/car-totop.png" alt="" srcset=""></a>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/0798869863.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+         <footer>
+        <div class="footer-upper">
+            <div class="quick-links">
+                <p class="pink small-font">
+                    Quick Links
+                </p>
+                <a href="/" class="xtra-small-font white">
+                    Home
+                </a>
+                <a href="/cars" class="xtra-small-font white">
+                    Cars
+                </a>
+                <a href="/about" class="xtra-small-font white">
+                    About
+                </a>
+                <a href="/contact" class="xtra-small-font white">
+                    Contact
+                </a>
+            </div>
+            <div class="footer-social-media">
+                <p class="pink small-font text-align-center">
+                    Contact Us
+                </p>
+                <div class="footer-media-cont">
+                    <div>
+                        <a href="#">
+                            <img src="/assets/instagran.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="/assets/fb.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="tel:9952537">
+                            <img src="/assets/phone.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="#"><img src="/assets/email.png" alt=""></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright white xtra-small-font">
+               © 2023 Copyright Bismuth
+            </div>
+                
+            
+        </div>
+    </footer>
+
+
+
+
+        <script>
+
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+
+        </script>
+
+        <script src="/app.js"></script>
+    </body>
+
+</html>
