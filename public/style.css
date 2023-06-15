@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+
 }
 
 a{
@@ -14,9 +16,10 @@ a{
 nav{
     display: flex;
     align-items: center;
-    background: #000;
+    height: 15vh;
     padding: 30px 70px;
     position: relative;
+    transition: 0.4s;
 }
 
 nav ul {
@@ -33,6 +36,7 @@ nav ul {
 nav ul li{
     margin: 0 10px;
     position: relative;
+    font-size: 1.2rem;
 }
 
 nav ul li::after{
@@ -65,7 +69,20 @@ nav img{
 }
 
 nav button{
+    all: unset;
+    cursor: pointer;
     position: absolute;
+    top: 35px;
+    right: 15px;
+    display: none;
+}
+
+nav .ham{
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: blue;
 }
 
 
@@ -74,6 +91,9 @@ nav button{
 @media screen and (max-width: 600px) {
     nav{
         display: block;
+        padding: 30px 0;
+        height: 90px;
+        overflow: hidden;
     }
 
     nav ul{
@@ -82,11 +102,21 @@ nav button{
     }
 
     nav div{
-        width: 60%;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 50px;
+
     }
     nav ul li{
         width: fit-content;
         margin: 20px auto;
         position: relative;
     }
+    nav button{
+        display: block;
+    }
+    .nav_open{
+        height: 320px;
+    }
+    
 }

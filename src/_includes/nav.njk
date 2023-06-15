@@ -1,5 +1,5 @@
 
-<nav>
+<nav id='nav'>
     <div>
         <img src="/assets/logo.png" alt="">
     </div>
@@ -11,12 +11,20 @@
     </ul>
 
 
-<button>
-    <div class="ham"></div>
-    <div class="ham"></div>
-    <div class="ham"></div>
-</button>
+    <button onclick='nav()'>
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
+    </button>
 
 </nav>
+
+<script>
+    let navBar = document.getElementById('nav')
+    const nav = () => {
+        navBar.classList.toggle('nav_open')
+    }
+
+</script>
 
 
