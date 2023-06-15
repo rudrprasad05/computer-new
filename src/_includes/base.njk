@@ -7,16 +7,7 @@
         <title>{{title}}</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="/assets/icon.ico">
-        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHXDPHNX23"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QHXDPHNX23');
-        </script>
+       
     </head>
     <body id="body">
 
@@ -26,21 +17,6 @@
 
         {% include "footer.njk" %}
 
-
-
-        <script>
-
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-                });
-            }
-            });
-        }
-
-        </script>
 
         <script src="/app.js"></script>
     </body>
