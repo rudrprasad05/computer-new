@@ -1,19 +1,22 @@
-<button class="nav-open-btn" id="nav-open-btn" onclick="navOpen()">
-    <div class="hams" id="ham1"></div>
-    <div class="hams" id="ham2"></div>
-    <div class="hams" id="ham3"></div>
-</button>
 
-<nav id="nav">
-    <div class="nav-title vertical-align-text medium-font">
-        <img src="/assests/logo.png" alt="">
+<nav>
+    <div>
+        <img src="/assets/logo.png" alt="">
     </div>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/cars">Cars</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        {%- for i in nav_options -%}
+            <li><a href="/">{{ nav_options[loop.index0] }}</a></li>
+        {%- endfor %}
+       
     </ul>
 
 
+<button>
+    <div class="ham"></div>
+    <div class="ham"></div>
+    <div class="ham"></div>
+</button>
+
 </nav>
+
+
