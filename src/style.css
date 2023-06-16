@@ -11,6 +11,7 @@
     --seaBlue: #21419B;
 }
 
+
 @font-face {
     font-family: Barlow;
     font-display: swap;
@@ -31,6 +32,24 @@ a{
 
 body{
     background: var(--accentLight);
+}
+
+/* ---------------- Custom scrollbar  ------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0,0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accentLight);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
 
 /* ---------------- Global Buttons  ------------------- */
@@ -59,10 +78,13 @@ body{
     font-size: 1.25rem;
     margin-right: 20px;
     cursor: pointer;
+    border: 2px solid var(--accent);
+    transition: all .3s ease;
 }
 
-body{
-    background: var(--seaBlueLight);
+.btn-hero:hover {
+   background-color: var(--accentLight);
+   color: var(--accent);
 }
 
 /* ---------------- nav ------------------- */
@@ -108,10 +130,6 @@ nav ul li::after{
     content: "";
     transition: 0.4s;
 
-}
-
-nav ul li:hover{
-    color: var(--accent);
 }
 
 nav ul li:hover:after{
@@ -317,13 +335,8 @@ footer > div > div {
     color: white;
 }
 
-.seaBlue_accent{
-    color: var(--seaBlue);
-}
-
-.pink_accent{
-    color: rgb(255, 64, 127);
-}
+.accent {
+    color: var(--accent);
 
 .img_cont_hero{
     position: absolute;
@@ -338,10 +351,14 @@ footer > div > div {
     position: absolute;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+
+    height: 100vh;
+    object-fit: cover;
+    object-position: right;
 }
 
 .hero .hero_big_text, .hero section{
     z-index: 2;
+
 }
 

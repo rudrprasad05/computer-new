@@ -5,7 +5,7 @@
     <h1 class="hero_big_text">
         {%- for i in hero_text -%}
             {% if hero_text[loop.index0] == hero_text_highlight %}
-                <span class='{{accent}}_accent'>{{ hero_text[loop.index0]}} </span>
+                <span class='accent'>{{ hero_text[loop.index0]}} </span>
 
             {% elif hero_text[loop.index0] == hero_text_break %}
                 <span>{{ hero_text[loop.index0]}} <br> </span>
