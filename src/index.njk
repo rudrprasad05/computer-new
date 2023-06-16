@@ -17,6 +17,8 @@ slider_rows: ['one', 'two']
 productCardsImg: ['printer1', 'printer1', 'printer1']
 product: ['Printing', 'Automation', 'Technology']
 
+quoteText: "Technology is our expertise. We'll take care of it, so you can focus on yours"
+
 ---
 
 {% include "hero.njk" %}
@@ -57,3 +59,43 @@ product: ['Printing', 'Automation', 'Technology']
 
 </div>
 
+{% include "quotePage.njk" %}
+
+
+<div class="form">
+    <div>
+        <p class="h1">Let's Work Together</p>
+        <form action="https://formsubmit.co/rudrprasad@yahoo.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+
+
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="car" class="form-control" placeholder="Product" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+
+            <button type="submit" class='btn'>
+                Send
+            </button>
+
+            <input type="hidden" name="_next" value="https://kantsrentals.netlify.app/thanks/">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Dear Valued Customer. We have received your email and will be with you shortly. If it is important then feel free to contact us on mobile: (679) 9261-933">
+
+        </form>
+    </div>
+        
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.8152510793193!2d178.43889337491694!3d-18.126320884686038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e1bdf96f9ddfcc7%3A0xecd3895ab7706bf!2sCOMPUTER%201-%20Suva!5e0!3m2!1sen!2sfj!4v1686904474507!5m2!1sen!2sfj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>

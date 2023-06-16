@@ -224,6 +224,7 @@ footer  {
     padding: 10px;
     color: white;
     font-weight: bold;
+    gap: 150px;
 }
 
 footer svg{
@@ -233,6 +234,7 @@ footer svg{
    transition: all .3s ease;
    padding: 10px;
 }
+
 
 .icons {
     display: flex;
@@ -258,12 +260,12 @@ footer svg{
     
  }
  .slider_cont{
-    padding: 30px 0 60px 0;
+    padding: 40px 0 100px 0;
  }
 
  .slider_h1{
      margin: 0%;
-     padding: 60px 0 30px 0;
+     padding: 100px 0 40px 0;
  }
 
 
@@ -335,6 +337,7 @@ footer svg{
 
     footer{
         flex-direction: column-reverse;
+        gap: 0px;
     }
 
     footer svg {
@@ -429,7 +432,7 @@ footer svg{
     margin: 0 0 50px 0;
 }
 .quote{
-    height: 50vh;
+    height: 70vh;
     width: 80vw;
     display: grid;
     place-items: center;
@@ -446,4 +449,44 @@ footer svg{
 
 .mr-x{
     color: gray;
+}
+
+/* ------form------- */
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 40px 120px 40px;
+    gap: 40px;
+}
+
+.form iframe{
+    width: 100%;   
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.form .col input, .form textarea{
+    width: 90%;
+    margin: 10px 10% 10px 0%;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--seaBlue);
+
+}
+
+.form .h1{
+    margin: 20px 0;
+    text-align: start;
+}
+
+.form .btn{
+    margin: 10px 10% 10px 0%;
+}
+
+input:focus{
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
