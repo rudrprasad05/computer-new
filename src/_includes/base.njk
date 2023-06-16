@@ -13,8 +13,13 @@
 
         {% include "nav.njk" %}
 
-        {{ content | safe }}
+       
 
+        {{ content | safe }}
+        <div>
+            {% include "productCard.njk" %}
+        </div>
+        {% include "slider.njk" %}
         {% include "footer.njk" %}
 
 
