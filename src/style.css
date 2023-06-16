@@ -8,6 +8,7 @@
 :root {
     --accent:#000000;
     --accentLight:#000000;
+    --seaBlue: #21419B;
 }
 
 @font-face {
@@ -316,8 +317,8 @@ footer > div > div {
     color: white;
 }
 
-.blue_accent{
-    color: blue;
+.seaBlue_accent{
+    color: var(--seaBlue);
 }
 
 .pink_accent{
@@ -334,7 +335,13 @@ footer > div > div {
 }
 
 .hero img{
+    position: absolute;
+    object-fit: cover;
     width: 100%;
-    
+    height: 100%;
+}
+
+.hero .hero_big_text, .hero section{
+    z-index: 2;
 }
 
