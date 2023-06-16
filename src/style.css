@@ -6,20 +6,14 @@
 }
 
 :root {
-    --seaBlue: #21419B;
-    --seaBlueLight: #EAF0FF;
-    --skyBlue: #20A9DB;
-    --skyBlueLight: #EDFAFF;
-    --pink: #E91682;
-    --pinkLight: #F1D9E6;
-    --yellow: #EEE71B;
-    --yellowLight: #FFFDEE;
+    --accent:#000000;
+    --accentLight:#000000;
 }
 
 @font-face {
     font-family: Barlow;
     font-display: swap;
-    src: url(src/assets/Barlow/*.ttf);
+    src: url(/assets/Barlow/Barlow-Regular.ttf);
 }
 
 a{
@@ -34,12 +28,16 @@ a{
     font-size: 2.5rem;
 }
 
-/* ---------------- Global Button  ------------------- */
+body{
+    background: var(--accentLight);
+}
+
+/* ---------------- Global Buttons  ------------------- */
 
 .btn {
     padding: 5px 10px;
     border-radius: 4px;
-   border: 2px solid red;
+   border: 2px solid var(--accent);
    transition: all .3s ease;
    cursor: pointer;
    font-size: 1rem;
@@ -48,17 +46,18 @@ a{
 
 .btn:hover {
    color: white;
-   background-color: red;
+   background-color: var(--accent);
 } 
 
-.btn-hero{
-    padding: 5px 10px;
+.btn-hero {
+    padding: 10px 20px;
     border-radius: 4px;
-    border: 2px solid red;
-    transition: all .3s ease;
+    background-color: var(--accent);
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    margin-right: 20px;
     cursor: pointer;
-    font-size: 1rem;
-    background-color: transparent;
 }
 
 body{
@@ -101,7 +100,7 @@ nav ul li::after{
     width: 0%;
     height: 2px;
     border-radius: 5px;
-    background: red;
+    background: var(--accent);
     position: absolute;
     left: 50%;
     top: 120%;
@@ -111,7 +110,7 @@ nav ul li::after{
 }
 
 nav ul li:hover{
-    color: red;
+    color: var(--accent);
 }
 
 nav ul li:hover:after{
@@ -140,7 +139,7 @@ nav .ham{
     height: 3px;
     margin-bottom: 5px;
     border-radius: 10px;
-    background: blue;
+    background: var(--accent);
 }
 
 /* ---------------- Product Card ------------------- */
@@ -172,7 +171,7 @@ nav .ham{
    width: 100%;
    top: 0;
    left: 0;
-   background-color: red;
+   background-color: var(--accent);
    z-index: -10;
 }
 
@@ -194,7 +193,7 @@ nav .ham{
 
 footer {
     padding: 10px;
-    background-color: wheat;
+    background-color: var(--accent);
 }
 
 footer > div {
@@ -213,7 +212,7 @@ footer > div > div {
 }
 
 #footerSVG {
-    fill: wheat;
+    fill: var(--accent);
     margin-bottom: -10px;
 }
 
