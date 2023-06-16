@@ -5,7 +5,11 @@
     </div>
     <ul>
         {%- for i in nav_options -%}
-            <li><a href="/">{{ nav_options[loop.index0] }}</a></li>
+            {% if nav_options[loop.index0] == 'Home' %}
+                <li><a href="../">{{ nav_options[loop.index0] }}</a></li>
+            {% else %}
+                <li><a href="/{{nav_options[loop.index0]}}">{{ nav_options[loop.index0] }}</a></li>
+            {% endif %}
         {%- endfor %}
        
     </ul>

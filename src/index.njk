@@ -1,7 +1,7 @@
 ---
 title: Computer 1
 layout: 'base.njk'
-nav_options: ['Printing', 'Technology', 'Automations', 'Contact']
+nav_options: ['Home', 'Printing', 'Technology', 'Automation', 'Contact']
 
 hero_img: 'home_hero'
 hero_text: ['Bringing', 'Tech', 'to', 'the', 'People']
@@ -21,9 +21,25 @@ product: ['Printing', 'Automation', 'Technology']
 
 {% include "hero.njk" %}
 
-<h1 class="h1">Our Services</h1>
+<section class="about_us">
+    <h1 class="h1">About Us</h1>
+    <div class="about_cont">
+        <div class='about_img_cont'>
+            <img src="/assets/about_img.jpg" alt="">
+        </div>
+        <div class='about_text'>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quibusdam, aspernatur vitae nihil accusamus debitis quis. Eum vero deserunt maxime perspiciatis. Atque aut sed vitae error repellat. Impedit, inventore eius!
+            </p>
+            <button class="btn-hero">More</button>
+        </div>
+    </div>
+</section>
 
+<h1 class="h1">Our Services</h1>
 <div class='productCardCont'>
+
+    
 
     {%- for i in productCardsImg -%}
 
@@ -33,7 +49,11 @@ product: ['Printing', 'Automation', 'Technology']
 
 </div>
 
+<div class="slider_main_cont">
 
-<h1 class="h1">Our Clients</h1>
+    <h1 class="h1 slider_h1">Our Clients</h1>
 
-{% include "slider.njk" %}
+    {% include "slider.njk" %}
+
+</div>
+

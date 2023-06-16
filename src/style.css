@@ -64,6 +64,7 @@ body{
    cursor: pointer;
    font-size: 1rem;
    background-color: transparent;
+   
 }
 
 .btn:hover {
@@ -80,6 +81,7 @@ body{
     font-size: 1.25rem;
     margin-right: 20px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border: 2px solid var(--accent);
     transition: all .3s ease;
 }
@@ -168,6 +170,7 @@ nav .ham{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 50px;
+    margin: 100px 0;
 }
 
 .productCard {
@@ -247,8 +250,16 @@ footer svg{
 
  /* ---------------- Infinite Slider  ------------------- */
 
+ 
  .slider_cont{
     padding: 40px 0;
+    
+ }
+
+ .slider_h1{
+     
+     margin: 0;
+     padding: 20px;
  }
 
  .sliderHolder {
@@ -339,7 +350,7 @@ footer svg{
 .hero{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     display: grid;
     align-items: center;
@@ -368,7 +379,9 @@ footer svg{
 .hero img{
     position: absolute;
     object-fit: cover;
+
     width: 100%;
+
     height: 100vh;
     object-fit: cover;
     object-position: right;
@@ -379,3 +392,34 @@ footer svg{
 
 }
 
+
+/* ----------------- about us ----------------- */
+
+.about_us{
+    height: 80vh;
+   padding-top: 10vh;
+}
+
+.about_cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    margin: auto;
+    gap: 100px;
+ 
+}
+
+.about_img_cont img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.about_text{
+    height: fit-content;
+    margin: auto 0;
+}
+
+.about_text p{
+    margin: 0 0 50px 0;
+}
