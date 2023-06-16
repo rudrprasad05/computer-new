@@ -49,7 +49,7 @@ body{
    background-color: var(--accent);
 } 
 
-.btnLG {
+.btn-hero {
     padding: 10px 20px;
     border-radius: 4px;
     background-color: var(--accent);
@@ -58,6 +58,10 @@ body{
     font-size: 1.25rem;
     margin-right: 20px;
     cursor: pointer;
+}
+
+body{
+    background: var(--seaBlueLight);
 }
 
 /* ---------------- nav ------------------- */
@@ -139,7 +143,11 @@ nav .ham{
 }
 
 /* ---------------- Product Card ------------------- */
-
+.productCardCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+}
 
 .productCard {
     width:225px;
@@ -210,6 +218,10 @@ footer > div > div {
 
  /* ---------------- Infinite Slider  ------------------- */
 
+ .slider_cont{
+    padding: 40px 0;
+ }
+
  .sliderHolder {
     display: flex;
     align-items: center;
@@ -220,8 +232,9 @@ footer > div > div {
  .slider {
     display: flex;
     align-items: center;
-       height: 50px;
-       animation: scroll 35s linear infinite;
+    height: 50px;
+    animation: scroll 35s linear infinite;
+    margin: 0 0 50px 0;
  }
 
  .slider img {
