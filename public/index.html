@@ -14,7 +14,7 @@
         
 <nav id='nav'>
     <div>
-        <img src="/assets/logo.png" alt="">
+        <a href="/index"><img src="/assets/logo.png" alt=""></a>
     </div>
     <ul>
                 <li><a href="../">Home</a></li>
@@ -76,7 +76,7 @@
 
             
     </h1>
-    <section>
+    <section class="hero_btns_holder">
         <button class="btn-hero">Products</button>
         <button class="btn-hero">Contact</button>
     </section>
@@ -94,12 +94,15 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quibusdam, aspernatur vitae nihil accusamus debitis quis. Eum vero deserunt maxime perspiciatis. Atque aut sed vitae error repellat. Impedit, inventore eius!
             </p>
-            <button class="btn-hero">More</button>
+            <button class="btn-hero"><span>More</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></button>  
+
         </div>
     </div>
 </section>
 
 <h1 class="h1">Our Services</h1>
+
 <div class='productCardCont'><div class="productCard">
     <img src="/assets/productCards/printer1.png" alt="">
     <div class="details">
@@ -131,9 +134,10 @@
 
 </div>
 
+<h1 class="h1">Our Clients</h1>
+
 <div class="slider_main_cont">
 
-    <h1 class="h1 slider_h1">Our Clients</h1>
 
     <div class='slider_cont'>
     <div class="sliderHolder"><div class="slider"><img src="/assets/slider/acer.png" alt=""><img src="/assets/slider/dell.png" alt=""><img src="/assets/slider/asus.png" alt=""><img src="/assets/slider/lenovo.png" alt=""><img src="/assets/slider/cannon.png" alt="">
@@ -157,10 +161,10 @@
     </div>
 </section>
 
+        <h1 class="h1">Let's Talk</h1>
 
 <div class="form">
-    <div>
-        <p class="h1">Let's Work Together</p>
+
         <form action="https://formsubmit.co/rudrprasad@yahoo.com" method="POST">
             <div class="form-group">
                 <div class="form-row">
@@ -181,8 +185,12 @@
                 <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
             </div>
 
-            <button type="submit" class='btn'>
+            <button type="submit" class="btn-hero">
                 Send
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+</svg>
+
             </button>
 
             <input type="hidden" name="_next" value="https://kantsrentals.netlify.app/thanks/">
@@ -190,7 +198,7 @@
             <input type="hidden" name="_autoresponse" value="Dear Valued Customer. We have received your email and will be with you shortly. If it is important then feel free to contact us on mobile: (679) 9261-933">
 
         </form>
-    </div>
+
         
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.8152510793193!2d178.43889337491694!3d-18.126320884686038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e1bdf96f9ddfcc7%3A0xecd3895ab7706bf!2sCOMPUTER%201-%20Suva!5e0!3m2!1sen!2sfj!4v1686904474507!5m2!1sen!2sfj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 

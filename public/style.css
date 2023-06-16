@@ -25,7 +25,7 @@ a{
 
 .h1 {
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px 0px 25px 0px;
     font-weight: bolder;
     font-size: 2.5rem;
 }
@@ -84,11 +84,28 @@ body{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border: 2px solid var(--accent);
     transition: all .3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btn-hero  svg {
+    stroke: var(--accentLight);
+    height: 20px;
+    margin-left: 10px;
+    transition: all .3s ease;
 }
 
 .btn-hero:hover {
    background-color: var(--accentLight);
    color: var(--accent);
+}
+
+.btn-hero:hover svg{
+   stroke: var(--accent);
+}
+
+.hero_btns_holder {
+    display: flex;
 }
 
 /* ---------------- nav ------------------- */
@@ -102,13 +119,22 @@ nav{
     transition: 0.4s;
     width: 100vw;
     z-index: 10;
+    position: fixed;
+    color: white;
+    transition: all .3s ease;
+}
+
+.scrolled {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--accentLight);
+    color: rgb(34, 34, 34);
 }
 
 nav ul {
     display: flex;
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: inherit;
     width: fit-content;
     margin: 0 0 0 auto;
     align-items: center;
@@ -169,12 +195,13 @@ nav .ham{
 .productCardCont{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 50px;
-    margin: 100px 0;
+    width: 80%;
+    margin: auto;
+    gap: 100px;
 }
 
 .productCard {
-    width:225px;
+    column-span: 1fr;
     height: 300px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -225,6 +252,7 @@ footer  {
     color: white;
     font-weight: bold;
     gap: 150px;
+    margin-top: 50px;
 }
 
 footer svg{
@@ -263,17 +291,17 @@ footer svg{
 
  .slider_main_cont{
     background: white;
-
-    
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.25) -3px -6px 6px 1px inset;
  }
+
  .slider_cont{
-    padding: 40px 0 100px 0;
+    padding: 40px 0px;
  }
-
+/* 
  .slider_h1{
      margin: 0%;
      padding: 100px 0 40px 0;
- }
+ } */
 
 
  .sliderHolder {
@@ -411,8 +439,9 @@ footer svg{
 /* ----------------- about us ----------------- */
 
 .about_us{
-    height: 80vh;
-   padding-top: 10vh;
+    height: 65vh;
+   width: 80%;
+   margin: auto;
 }
 
 .about_cont{
@@ -421,7 +450,6 @@ footer svg{
     width: 80vw;
     margin: auto;
     gap: 100px;
- 
 }
 
 .about_img_cont img{
@@ -433,13 +461,15 @@ footer svg{
 .about_text{
     height: fit-content;
     margin: auto 0;
+    
 }
 
 .about_text p{
     margin: 0 0 50px 0;
 }
+
 .quote{
-    height: 70vh;
+    height: 75vh;
     width: 80vw;
     display: grid;
     place-items: center;
@@ -448,10 +478,10 @@ footer svg{
     margin: auto;
 
 }
+
 .quote > div {
     display: grid;
     gap: 50px;
-
 }
 
 .mr-x{
@@ -461,40 +491,41 @@ footer svg{
 /* ------form------- */
 
 .form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px 40px 120px 40px;
-    gap: 40px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 50px;
+    height: 85vh;
 }
 
 .form iframe{
-    width: 100%;   
+    width: 50%;   
     margin: auto;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.form .col input, .form textarea{
-    width: 90%;
-    margin: 10px 10% 10px 0%;
-    background: transparent;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--seaBlue);
+form {
+    width: 50%;
 
 }
 
-.form .h1{
-    margin: 20px 0;
-    text-align: start;
+.form .col input, .form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--accent);
+    outline: none;
+    transition: all .3s ease;
+    caret-color: var(--accent);
+
 }
 
 .form .btn{
     margin: 10px 10% 10px 0%;
 }
 
-input:focus{
-    
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
 
