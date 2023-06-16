@@ -1,0 +1,32 @@
+---
+layout: 'base.njk'
+---
+
+<section class='individual_hero'>
+
+    <img src="/assets/{{img}}" alt="">
+   
+
+    <p>
+        {{title}}
+    </p>
+</section>
+
+<div class='productCardCont'>
+
+    {%- for i in productCardsImg -%}
+
+        {% include "productCard.njk" %}
+
+    {%- endfor %}
+
+</div>
+
+
+<div class="slider_main_cont">
+
+    <h1 class="h1 slider_h1">Our Brands</h1>
+
+    {% include "slider.njk" %}
+
+</div>
