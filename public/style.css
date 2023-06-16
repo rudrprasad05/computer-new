@@ -235,6 +235,13 @@ footer svg{
    padding: 10px;
 }
 
+.yes{
+    color: #000000;
+}
+
+.yes svg{
+    fill: #000000;
+}
 
 .icons {
     display: flex;
@@ -491,6 +498,3 @@ input:focus{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.yes{
-    color: #000000;
-}
