@@ -10,6 +10,26 @@ hero_text_break: 'to'
 
 accent: 'blue'
 
+slider: ['acer', 'dell', 'asus', 'lenovo', 'cannon']
+slider_rows: ['one', 'two']
+
+productCardsImg: ['printer1', 'printer1', 'printer1']
+product: ['Printer', 'Fax', 'IDK']
+
 ---
 
 {% include "hero.njk" %}
+
+<div class='productCardCont'>
+
+    {%- for i in productCardsImg -%}
+
+        {% include "productCard.njk" %}
+
+    {%- endfor %}
+
+</div>
+
+
+
+{% include "slider.njk" %}

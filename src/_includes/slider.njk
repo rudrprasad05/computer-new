@@ -1,17 +1,21 @@
-<h1 class="h1">Our Brands</h1>
-<div class="sliderHolder"> 
-    <div class="slider">
-        <img src="/assets/slider/acer.png" alt="">
-        <img src="/assets/slider/dell.png" alt="">
-        <img src="/assets/slider/cannon.png" alt="">
-        <img src="/assets/slider/asus.png" alt="">
-        <img src="/assets/slider/lenovo.png" alt="">
+<div class='slider_cont'>
+
+    <h1 class="h1">Our Brands</h1>
+    <div class="sliderHolder">
+        {%- for i in slider_rows -%} 
+
+            <div class="slider">
+
+                {%- for j in slider -%} 
+
+                    <img src="/assets/slider/{{slider[loop.index0]}}.png" alt="">
+
+                {%- endfor %}
+
+            </div>
+
+        {%- endfor %}
+        
     </div>
-    <div class="slider">
-        <img src="/assets/slider/acer.png" alt="">
-        <img src="/assets/slider/dell.png" alt="">
-        <img src="/assets/slider/cannon.png" alt="">
-        <img src="/assets/slider/asus.png" alt="">
-        <img src="/assets/slider/lenovo.png" alt="">
-    </div>
+
 </div>
