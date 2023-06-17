@@ -1,5 +1,7 @@
 ---
 layout: 'base.njk'
+j: ['1', '2', '3']
+modals: ['modal1', 'modal2', 'modal3']
 ---
 
 <section class='individual_hero'>
@@ -16,11 +18,20 @@ layout: 'base.njk'
 
     {%- for i in productCardsImg -%}
 
-        {% include "productCard.njk" %}
+        {% include "modalProducts.njk" %}
 
     {%- endfor %}
 
 </div>
+
+
+{%- for i in productCardsImg -%}
+
+    {% include "modal.njk" %}
+
+{%- endfor %}
+
+
 
   <h1 class="h1 slider_h1">Our Brands</h1>
 <div class="slider_main_cont">
@@ -30,3 +41,4 @@ layout: 'base.njk'
     {% include "slider.njk" %}
 
 </div>
+

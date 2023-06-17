@@ -19,22 +19,22 @@ function colorLoad() {
     if (Body.id ==  "sky") {
         color.style.setProperty('--accent', skyBlue);
         color.style.setProperty('--accentLight', skyBlueLight);
-        console.log("changed to sea blue")
+
      }
      else if (Body.id ==  "yellow") {
         color.style.setProperty('--accent', yellow);
         color.style.setProperty('--accentLight', yellowLight);
-        console.log("changed to light yellow")
+
      }
      else if (Body.id ==  "pink") {
         color.style.setProperty('--accent', pink);
         color.style.setProperty('--accentLight', pinkLight);
-        console.log("changed to pink")
+
      }
      else {
         color.style.setProperty('--accent', seaBlue);
         color.style.setProperty('--accentLight', seaBlueLight);
-        console.log("changed to deep blue")
+
      }
 }
 
@@ -51,3 +51,86 @@ function scrollFunction() {
     } 
 }
 
+const openModal1 = document.getElementById('1')
+const openModal2 = document.getElementById('2')
+const openModal3 = document.getElementById('3')
+
+const modal1 = document.getElementById('modal1')
+const modal2 = document.getElementById('modal2')
+const modal3 = document.getElementById('modal3')
+
+const modal1Close = document.getElementById('modal1Close')
+const modal2Close = document.getElementById('modal2Close')
+const modal3Close = document.getElementById('modal3Close')
+
+
+// modal 1
+
+try{
+openModal1.addEventListener("click", ()=>{
+    modal1.classList.add('show')
+    Body.classList.add('body-no-scroll')
+    modal1.showModal()
+   
+})
+
+
+modal1Close.addEventListener("click", ()=>{
+    modal1.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal1.close()
+})
+
+//modal 2
+
+openModal2.addEventListener("click", ()=>{
+    modal2.classList.add('show')
+    Body.classList.add('body-no-scroll')
+    modal2.showModal()
+})
+
+modal2Close.addEventListener("click", ()=>{
+    modal2.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal2.close()
+})
+
+// modal 3
+
+openModal3.addEventListener("click", ()=>{
+    modal3.classList.add('show')
+    Body.classList.add('body-no-scroll')
+    modal3.showModal()
+})
+
+modal3Close.addEventListener("click", ()=>{
+    modal3.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal3.close()
+})
+
+window.addEventListener('click', outsideClick);
+
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal1) {
+    modal1.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal1.close()
+  }
+  if (e.target == modal2){
+    modal2.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal2.close()
+  }
+  if (e.target == modal3){
+    modal3.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
+    modal3.close()
+  }
+ 
+}
+}catch{
+    console.log('')
+}
