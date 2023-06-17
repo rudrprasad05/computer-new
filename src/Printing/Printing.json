@@ -1,0 +1,10 @@
+{
+
+    "tags": "post, Printing", 
+    "author": "Rudr Prasad",
+    "layout": "individual_pages.njk",
+    "img": "pink_bg.jpg",
+    "color": "pink",
+    "nav_options": ["Home", "Cannon", "Color", "Banners", "Contact"],
+    "nav_links": ["../../", "../Cannon", "../Color", "../Banners", "../../Contact"]
+}

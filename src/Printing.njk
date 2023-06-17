@@ -1,8 +1,8 @@
 ---
 title: Printers
 layout: 'base.njk'
-nav_options: ['Home', 'Cannon', 'Color', 'Fax', 'Contact']
-nav_links: ['../', '/Cannon', '/Color', '/Fax', 'Contact']
+nav_options: ['Home', 'Cannon', 'Color', 'Banners', 'Contact']
+nav_links: ['../', 'Cannon', 'Color', 'Banners', 'Contact']
 root_dir: ['Printing/']
 
 hero_img: 'printer_hero'
@@ -14,7 +14,7 @@ color: 'pink'
 accent: 'pink'
 
 productCardsImg: ['printer1', 'printer1', 'printer1']
-product: ['Printing', 'Faxing', 'Scanning']
+product: ['Cannon', 'Color', 'Banners']
 
 slider: ['acer', 'dell', 'asus', 'lenovo', 'cannon']
 slider_rows: ['one', 'two']
@@ -25,8 +25,8 @@ quoteText: 'A printer consists of three main parts: the case, the jammed paper t
 
 {% include "hero.njk" %}
 
-<h1 class="h1">Our Services</h1>
-<div class='productCardCont'>
+<h1 class="h1" id='productCard'>Our Services</h1>
+<div class='productCardCont' >
 
     {%- for i in productCardsImg -%}
 
@@ -37,12 +37,12 @@ quoteText: 'A printer consists of three main parts: the case, the jammed paper t
 </div>
 
 
+<h1 class="h1">Our Clients</h1>
+
 <div class="slider_main_cont">
 
-    <h1 class="h1 slider_h1">Our Brands</h1>
 
     {% include "slider.njk" %}
 
 </div>
-
 {% include "quotePage.njk" %}
