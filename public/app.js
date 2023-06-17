@@ -1,6 +1,7 @@
 // let him cook 🧑‍🍳
 
-const seaBlue = "#21419B";
+// const seaBlue = "#21419B";
+const seaBlue = "#0079ff";
 const seaBlueLight = "#EAF0FF";
 const skyBlue = "#20A9DB";
 const skyBlueLight ="#EDFAFF";

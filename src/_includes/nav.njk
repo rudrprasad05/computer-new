@@ -1,12 +1,12 @@
 
-<nav id='nav'>
+<nav id='nav' class='scrolled-idk'>
     <div>
         <a href="/index"><img src="/assets/logo.png" alt=""></a>
     </div>
     <ul>
         {%- for i in nav_options -%}
             
-            <li><a href="{{nav_links[loop.index0]}}">{{ nav_options[loop.index0] }}</a></li>
+            <li class='{{black}}'><a href="{{nav_links[loop.index0]}}">{{ nav_options[loop.index0] }}</a></li>
           
         {%- endfor %}
        

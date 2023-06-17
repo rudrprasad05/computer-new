@@ -130,9 +130,14 @@ nav{
 
 .scrolled {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: var(--accentLight);
-    color: rgb(34, 34, 34);
+    background-color: var(--accent);
+    color: var(--accentLight);
 }
+
+.scrolled-idk {
+    background-color: var(--accent);
+}
+
 
 nav ul {
     display: flex;
@@ -155,13 +160,17 @@ nav ul li::after{
     width: 0%;
     height: 2px;
     border-radius: 5px;
-    background: var(--accent);
+    background: var(--accentLight);
     position: absolute;
     left: 50%;
     top: 120%;
     content: "";
     transition: 0.4s;
 
+}
+
+.scrolled-idk li::after{
+    background: #000;
 }
 
 nav ul li:hover:after{
@@ -285,6 +294,10 @@ footer svg{
 }
 
 .yes{
+    color: #000000;
+}
+
+.yes_scroll{
     color: #000000;
 }
 
