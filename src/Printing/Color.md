@@ -7,9 +7,9 @@ product: ['Asus', 'HP', 'Dell']
 
 price: ['$ price1', '$ price 2', '$ price 3']
 productDesc: [
-    "this will be description 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi totam minus corporis saepe debitis optio fugit ratione qui laudantium temporibus, incidunt, pariatur minima eos reiciendis exercitationem sequi obcaecati facere voluptatum",
-    "this will be description 2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi totam minus corporis saepe debitis optio fugit ratione qui laudantium temporibus, incidunt, pariatur minima eos reiciendis exercitationem sequi obcaecati facere voluptatum",
-    "this will be description 3. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi totam minus corporis saepe debitis optio fugit ratione qui laudantium temporibus, incidunt, pariatur minima eos reiciendis exercitationem sequi obcaecati facere voluptatum"
+    "The best bang for your buck",
+    "Color so vivid it sharpens any design",
+    "World renoun for its quality ink jets and scanning technology"
 ]
 
 
