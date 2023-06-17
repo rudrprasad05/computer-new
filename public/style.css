@@ -173,7 +173,7 @@ nav div{
     width: 20%;
 }
 nav img{
-    width: 100%;
+    max-width: 100%;
 }
 
 nav button{
@@ -190,7 +190,7 @@ nav .ham{
     height: 3px;
     margin-bottom: 5px;
     border-radius: 10px;
-    background: var(--accent);
+    background: var(--accentLight);
 }
 
 /* ---------------- Product Card ------------------- */
@@ -202,12 +202,25 @@ nav .ham{
     gap: 100px;
 }
 
+
+.productCard:before {
+    position: absolute;
+    content: "";
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    z-index: 1;
+ }
+
 .productCard {
-    column-span: 1fr;
-    height: 300px;
+
+    width: 100%;
+    margin: auto;
+   height: 100%;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: auto;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -215,21 +228,17 @@ nav .ham{
     align-items: center;
     padding: 10px 5px;
     justify-content: space-between;
+    background: white;
 }
 
-.productCard:before {
-   position: absolute;
-   content: "";
-   height: 75px;
-   width: 100%;
-   top: 0;
-   left: 0;
-   background-color: var(--accent);
-   z-index: -10;
+.productCard p{
+    padding: 0 10px;
 }
+
 
 .productCard img{
   width: 150px;
+  z-index: 2;
 }
 
 .details {
@@ -243,8 +252,12 @@ nav .ham{
 
 .details h4{
     font-weight: 900;
+    font-size: 1.4rem;
 }
-
+.productCard p{
+    margin: 10px 0 15px 0;
+    color: rgb(116, 116, 116);
+}
 
 /* ---------------- Footer ------------------- */
 
@@ -351,6 +364,7 @@ footer svg{
         padding: 30px 0;
         height: 90px;
         overflow: hidden;
+        background: var(--accent);
     }
 
     nav ul{
@@ -373,7 +387,7 @@ footer svg{
         display: block;
     }
     .nav_open{
-        height: 320px;
+        height: 360px;
     }
 
     /* ---------------- Footer media ------------------- */

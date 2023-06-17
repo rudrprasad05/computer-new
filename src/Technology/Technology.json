@@ -4,6 +4,6 @@
     "layout": "individual_pages.njk",
     "img": "blue_bg.jpg",
     "color": "sky",
-    "nav_options": ["Home", "Web Development", "Networks", "Repairs", "Contact"],
+    "nav_options": ["Home", "Websites", "Networks", "Repairs", "Contact"],
     "nav_links": ["../../", "../Web Development", "../Networks", "../Repairs", "../../Contact"]
 }

@@ -4,9 +4,11 @@ const seaBlue = "#21419B";
 const seaBlueLight = "#EAF0FF";
 const skyBlue = "#20A9DB";
 const skyBlueLight ="#EDFAFF";
-const pink = "#E91682";
+// const pink = "#E91682";
+const pink = "#E02C9A";
 const pinkLight = "#F1D9E6";
-const yellow = "#EEE71B";
+// const yellow = "#EEE71B";
+const yellow = "#f6fa70";
 const yellowLight = "#FFFDEE";
 
 
@@ -134,3 +136,4 @@ function outsideClick(e) {
 }catch{
     console.log('')
 }
+
