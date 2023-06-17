@@ -213,7 +213,7 @@ nav .ham{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 5px;
+    padding: 20px 5px;
     justify-content: space-between;
 }
 
@@ -540,7 +540,9 @@ form {
     display: grid;
     place-items: center;
     height: 50vh;
+    overflow: hidden;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .individual_hero p{
@@ -558,5 +560,8 @@ form {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
 }
