@@ -1,0 +1,9 @@
+{
+    "tags": "post, Automation", 
+    "author": "Rudr Prasad",
+    "layout": "individual_pages.njk",
+    "img": "gold_bg.jpg",
+    "color": "yellow",
+    "nav_options": ["Home", "Inventory", "N/A", "N/A", "Contact"],
+    "nav_links": ["../../", "../Inventory", "../Na1", "../Na2", "../../Contact"]
+}

@@ -115,7 +115,7 @@ nav{
     display: flex;
     align-items: center;
     height: 10vh;
-    padding: 30px 70px;
+    padding: 0px 70px;
     position: absolute;
     transition: 0.4s;
     width: 100vw;
@@ -123,6 +123,7 @@ nav{
     position: fixed;
     color: var(--accentLight);
     transition: all .3s ease;
+
 }
 
 .scrolled {
@@ -135,7 +136,7 @@ nav ul {
     display: flex;
     text-decoration: none;
     list-style: none;
-
+    margin-left: auto; /* dont fk with this one */
     color: inherit;
 
     

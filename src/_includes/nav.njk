@@ -6,12 +6,8 @@
     <ul>
         {%- for i in nav_options -%}
             
-            {% if nav_options[loop.index0] == 'Contact'%}
-                <li><a href="../#contact">{{ nav_options[loop.index0] }}</a></li>
-           
-            {% else %}
-                <li><a href="{{nav_links[loop.index0]}}">{{ nav_options[loop.index0] }}</a></li>
-            {% endif %}
+            <li><a href="{{nav_links[loop.index0]}}">{{ nav_options[loop.index0] }}</a></li>
+          
         {%- endfor %}
        
     </ul>
