@@ -130,9 +130,14 @@ nav{
 
 .scrolled {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: var(--accentLight);
-    color: rgb(34, 34, 34);
+    background-color: var(--accent);
+    color: var(--accentLight);
 }
+
+.scrolled-idk {
+    background-color: var(--accent);
+}
+
 
 nav ul {
     display: flex;
@@ -155,13 +160,17 @@ nav ul li::after{
     width: 0%;
     height: 2px;
     border-radius: 5px;
-    background: var(--accent);
+    background: var(--accentLight);
     position: absolute;
     left: 50%;
     top: 120%;
     content: "";
     transition: 0.4s;
 
+}
+
+.scrolled-idk li::after{
+    background: #000;
 }
 
 nav ul li:hover:after{
@@ -173,7 +182,7 @@ nav div{
     width: 20%;
 }
 nav img{
-    width: 100%;
+    max-width: 100%;
 }
 
 nav button{
@@ -190,7 +199,7 @@ nav .ham{
     height: 3px;
     margin-bottom: 5px;
     border-radius: 10px;
-    background: var(--accent);
+    background: var(--accentLight);
 }
 
 /* ---------------- Product Card ------------------- */
@@ -198,16 +207,29 @@ nav .ham{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    margin: auto;
+    margin: 50px auto 70px auto;
     gap: 100px;
 }
 
+
+.productCard:before {
+    position: absolute;
+    content: "";
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    z-index: 1;
+ }
+
 .productCard {
-    column-span: 1fr;
-    height: 300px;
+
+    width: 100%;
+    margin: auto;
+   height: 100%;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: auto;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -215,21 +237,17 @@ nav .ham{
     align-items: center;
     padding: 20px 5px;
     justify-content: space-between;
+    background: white;
 }
 
-.productCard:before {
-   position: absolute;
-   content: "";
-   height: 75px;
-   width: 100%;
-   top: 0;
-   left: 0;
-   background-color: var(--accent);
-   z-index: -10;
+.productCard p{
+    padding: 0 10px;
 }
+
 
 .productCard img{
   width: 150px;
+  z-index: 2;
 }
 
 .details {
@@ -243,8 +261,12 @@ nav .ham{
 
 .details h4{
     font-weight: 900;
+    font-size: 1.4rem;
 }
-
+.productCard p{
+    margin: 10px 0 15px 0;
+    color: rgb(116, 116, 116);
+}
 
 /* ---------------- Footer ------------------- */
 
@@ -272,6 +294,10 @@ footer svg{
 }
 
 .yes{
+    color: #000000;
+}
+
+.yes_scroll{
     color: #000000;
 }
 
@@ -351,6 +377,7 @@ footer svg{
         padding: 30px 0;
         height: 90px;
         overflow: hidden;
+        background: var(--accent);
     }
 
     nav ul{
@@ -373,7 +400,7 @@ footer svg{
         display: block;
     }
     .nav_open{
-        height: 320px;
+        height: 360px;
     }
 
     /* ---------------- Footer media ------------------- */
@@ -465,7 +492,10 @@ footer svg{
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.26) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
+.about_us .h1{
+    margin: 0px auto 0px auto;
+    padding: 80px 0 20px 0;
+}
 .about_text{
     height: fit-content;
     margin: auto 0;
@@ -560,8 +590,86 @@ form {
     top: 0;
     left: 0;
     width: 100%;
+
     height: 100%;
     z-index: -100;
     object-fit: cover;
     object-position: center;
+
+    height: 50vh;
+}
+
+dialog{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    place-items: center;
+    padding: 30px 40px;
+    gap: 40px;
+    border: none;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.96) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+dialog::backdrop{
+    background: rgb(0 0 0 / .6);
+} 
+
+.show{
+    display: grid;
+}
+
+dialog img{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+dialog .close{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--accent);
+}
+
+dialog .title{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: var(--accent);
+}
+
+dialog p{
+    margin: 10px 0;
+}
+
+dialog .desc{
+    text-align: justify;
+}
+
+dialog .price{
+    color: var(--accent);
+}
+
+dialog::after{
+    position: absolute;
+    background: var(--accent);
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.body-no-scroll{
+    overflow:hidden;
+
 }

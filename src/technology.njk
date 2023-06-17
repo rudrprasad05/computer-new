@@ -2,10 +2,16 @@
 
 title: Technology
 layout: 'base.njk'
-nav_options: ['Home', 'Web Development', 'Networks', 'Repairs', 'Contact']
+nav_options: ['Home', 'Websites', 'Networks', 'Repairs', 'Contact']
 nav_links: ['../', 'Web Development', 'Networks', 'Repairs', '../#contact']
 root_dir: ['Technology']
-services: []
+
+product_description: [
+    "We bring the web to you", 
+    "Connecting you to your customers",
+    "Corrupt drive? Spilled some coffee? We got you covered"
+]
+
 
 hero_img: 'technology_hero'
 hero_text: ["Fiji's", 'Best', 'IT', 'Provider']
@@ -22,7 +28,7 @@ slider_rows: ['one', 'two']
 
 quoteText: 'Automation is good, so long as you know exactly where to put the machine'
 
-black: 'yes'
+
 
 ---
 
@@ -49,3 +55,5 @@ black: 'yes'
 </div>
 
 {% include "quotePage.njk" %}
+
+{% include "modal.njk" %}

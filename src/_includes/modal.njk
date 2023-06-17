@@ -1,0 +1,14 @@
+<dialog id='{{modals[loop.index0]}}'>
+
+    <div class="img">
+        <img src="/assets/productCards/{{productCardsImg[loop.index0]}}.png" alt="">
+    </div>
+
+    <div class="text">
+        <p class="title">{{product[loop.index0]}}</p>
+        <p class="desc">{{productDesc[loop.index0]}}</p>
+        <p class="price">{{price[loop.index0]}}</p>
+    </div>
+
+    <div class="close" id='{{modals[loop.index0]}}Close'>x</div>
+</dialog>
