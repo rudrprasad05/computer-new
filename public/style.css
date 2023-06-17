@@ -235,7 +235,7 @@ nav .ham{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 5px;
+    padding: 20px 5px;
     justify-content: space-between;
     background: white;
 }
@@ -570,7 +570,9 @@ form {
     display: grid;
     place-items: center;
     height: 50vh;
+    overflow: hidden;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .individual_hero p{
@@ -588,7 +590,7 @@ form {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+
 }
 
 dialog{
@@ -663,4 +665,5 @@ dialog::after{
 
 .body-no-scroll{
     overflow:hidden;
+
 }

@@ -1,7 +1,7 @@
 ---
 title: Computer Repairs & Software Installations
 
-productCardsImg: ['printer1', 'printer1', 'printer1']
+productCardsImg: ['repair_1', 'repair_2', 'repair_3']
 product: ['Android & Iphone', 'Windows', 'MacOs']
 
 price: ['$ price1', '$ price 2', '$ price 3']
