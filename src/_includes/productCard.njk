@@ -1,9 +1,14 @@
-<div class="productCard">
-    <img src="/assets/productCards/{{productCardsImg[loop.index0]}}.png" alt="">
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/{{productCardsImg[loop.index0]}}.png" alt="">
+    </div>
     <div class="details">
         <h4>{{product[loop.index0]}}</h4>
         <p>{{product_description[loop.index0]}}</p>
         <a href="{{product[loop.index0]}}" ><button class="btn">More Info</button></a>
     </div>
 </div>
+
+
+
 

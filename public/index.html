@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Computer 1</title>
         <link rel="stylesheet" href="/style.css">
+
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
         <link rel="icon" href="/assets/logo.ico">
        
     </head>
@@ -93,8 +97,10 @@
 
 <h1 class="h1" id='productCard'>Our Services</h1>
 
-<div class='productCardCont'><div class="productCard">
-    <img src="/assets/productCards/index_1.png" alt="">
+<div class='productCardCont'><div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/index_1.png" alt="">
+    </div>
     <div class="details">
         <h4>Printing</h4>
         <p></p>
@@ -102,8 +108,13 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/index_2.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/index_2.png" alt="">
+    </div>
     <div class="details">
         <h4>Automation</h4>
         <p></p>
@@ -111,14 +122,22 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/index_3.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/index_3.png" alt="">
+    </div>
     <div class="details">
         <h4>Technology</h4>
         <p></p>
         <a href="Technology" ><button class="btn">More Info</button></a>
     </div>
 </div>
+
+
+
 
 
 
@@ -130,9 +149,9 @@
 
 
     <div class='slider_cont'>
-    <div class="sliderHolder"><div class="slider"><img src="/assets/slider/acer.png" alt=""><img src="/assets/slider/dell.png" alt=""><img src="/assets/slider/asus.png" alt=""><img src="/assets/slider/lenovo.png" alt=""><img src="/assets/slider/cannon.png" alt="">
+    <div class="sliderHolder"><div class="slider"><img src="/assets/slider/acer.png" alt=""><img src="/assets/slider/cannon.png" alt=""><img src="/assets/slider/asus.png" alt=""><img src="/assets/slider/lenovo.png" alt=""><img src="/assets/slider/dell.png" alt="">
 
-            </div><div class="slider"><img src="/assets/slider/acer.png" alt=""><img src="/assets/slider/dell.png" alt=""><img src="/assets/slider/asus.png" alt=""><img src="/assets/slider/lenovo.png" alt=""><img src="/assets/slider/cannon.png" alt="">
+            </div><div class="slider"><img src="/assets/slider/acer.png" alt=""><img src="/assets/slider/cannon.png" alt=""><img src="/assets/slider/asus.png" alt=""><img src="/assets/slider/lenovo.png" alt=""><img src="/assets/slider/dell.png" alt="">
 
             </div>
         
@@ -144,10 +163,7 @@
 
 <section class='quote'>
     <div>
-        <p>Technology is our expertise. We&#39;ll take care of it, so you can focus on yours</p>
-        <p class='mr-x'>
-            Mr X
-        </p>
+        <p><span class="quotationMarks">"</span>Technology is our expertise. We&#39;ll take care of it, so you can focus on yours<span class="quotationMarks">"</span></p>
     </div>
 </section>
 
@@ -210,6 +226,12 @@
 
 
         <script src="/app.js"></script>
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 
