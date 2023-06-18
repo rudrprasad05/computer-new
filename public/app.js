@@ -80,6 +80,7 @@ openModal1.addEventListener("click", ()=>{
 
 modal1Close.addEventListener("click", ()=>{
     modal1.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
     modal1.close()
 })
 
@@ -93,6 +94,7 @@ openModal2.addEventListener("click", ()=>{
 
 modal2Close.addEventListener("click", ()=>{
     modal2.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
     modal2.close()
 })
 
@@ -106,6 +108,7 @@ openModal3.addEventListener("click", ()=>{
 
 modal3Close.addEventListener("click", ()=>{
     modal3.classList.remove('show')
+    Body.classList.remove('body-no-scroll')
     modal3.close()
 })
 
@@ -117,15 +120,19 @@ function outsideClick(e) {
   if (e.target == modal1) {
     modal1.classList.remove('show')
     modal1.close()
+    Body.classList.remove('body-no-scroll')
   }
   if (e.target == modal2){
     modal2.classList.remove('show')
     modal2.close()
+    Body.classList.remove('body-no-scroll')
   }
   if (e.target == modal3){
     modal3.classList.remove('show')
     modal3.close()
+    Body.classList.remove('body-no-scroll')
   }
+  
  
 }
 }catch{
