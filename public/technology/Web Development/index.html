@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Development &amp; Graphic Design</title>
         <link rel="stylesheet" href="/style.css">
+
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
         <link rel="icon" href="/assets/logo.ico">
        
     </head>
@@ -88,7 +92,10 @@
         <p class="price">$ price1</p>
     </div>
 
-    <div class="close" id='modal1Close'>x</div>
+    <div class="close" id='modal1Close'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</div>
 </dialog><dialog id='modal2'>
 
     <div class="img">
@@ -101,7 +108,10 @@
         <p class="price">$ price 2</p>
     </div>
 
-    <div class="close" id='modal2Close'>x</div>
+    <div class="close" id='modal2Close'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</div>
 </dialog><dialog id='modal3'>
 
     <div class="img">
@@ -114,7 +124,10 @@
         <p class="price">$ price 3</p>
     </div>
 
-    <div class="close" id='modal3Close'>x</div>
+    <div class="close" id='modal3Close'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</div>
 </dialog>
 
 
@@ -137,6 +150,12 @@
 
 
         <script src="/app.js"></script>
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 

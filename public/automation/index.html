@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Automation</title>
         <link rel="stylesheet" href="/style.css">
+
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
         <link rel="icon" href="/assets/logo.ico">
        
     </head>
@@ -73,8 +77,10 @@
 </div>
 
 <h1 class="h1">Our Services</h1>
-<div class='productCardCont'><div class="productCard">
-    <img src="/assets/productCards/printer1.png" alt="">
+<div class='productCardCont'><div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/printer1.png" alt="">
+    </div>
     <div class="details">
         <h4>Inventory</h4>
         <p></p>
@@ -82,8 +88,13 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/printer1.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/printer1.png" alt="">
+    </div>
     <div class="details">
         <h4>Change</h4>
         <p></p>
@@ -91,14 +102,22 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/printer1.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/printer1.png" alt="">
+    </div>
     <div class="details">
         <h4>Change</h4>
         <p></p>
         <a href="Change" ><button class="btn">More Info</button></a>
     </div>
 </div>
+
+
+
 
 
 
@@ -125,10 +144,7 @@
 
 <section class='quote'>
     <div>
-        <p>Automation is good, so long as you know exactly where to put the machine</p>
-        <p class='mr-x'>
-            Mr X
-        </p>
+        <p><span class="quotationMarks">"</span>Automation is good, so long as you know exactly where to put the machine<span class="quotationMarks">"</span></p>
     </div>
 </section>
 
@@ -148,6 +164,12 @@
 
 
         <script src="/app.js"></script>
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 

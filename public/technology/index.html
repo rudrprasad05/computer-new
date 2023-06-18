@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Technology</title>
         <link rel="stylesheet" href="/style.css">
+
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
         <link rel="icon" href="/assets/logo.ico">
        
     </head>
@@ -73,8 +77,10 @@
 </div>
 
 <h1 class="h1">Our Services</h1>
-<div class='productCardCont'><div class="productCard">
-    <img src="/assets/productCards/tech_1.png" alt="">
+<div class='productCardCont'><div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/tech_1.png" alt="">
+    </div>
     <div class="details">
         <h4>Web Development</h4>
         <p>We bring the web to you</p>
@@ -82,8 +88,13 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/tech_2.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/tech_2.png" alt="">
+    </div>
     <div class="details">
         <h4>Networks</h4>
         <p>Connecting you to your customers</p>
@@ -91,14 +102,22 @@
     </div>
 </div>
 
-<div class="productCard">
-    <img src="/assets/productCards/tech_3.png" alt="">
+
+
+
+<div class="productCard" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100" data-aos-once="false">
+    <div class="blur-load">
+            <img src="/assets/productCards/tech_3.png" alt="">
+    </div>
     <div class="details">
         <h4>Repairs</h4>
         <p>Corrupt drive? Spilled some coffee? We got you covered</p>
         <a href="Repairs" ><button class="btn">More Info</button></a>
     </div>
 </div>
+
+
+
 
 
 
@@ -124,10 +143,7 @@
 
 <section class='quote'>
     <div>
-        <p>Automation is good, so long as you know exactly where to put the machine</p>
-        <p class='mr-x'>
-            Mr X
-        </p>
+        <p><span class="quotationMarks">"</span>Automation is good, so long as you know exactly where to put the machine<span class="quotationMarks">"</span></p>
     </div>
 </section>
 
@@ -143,7 +159,10 @@
         <p class="price"></p>
     </div>
 
-    <div class="close" id='Close'>x</div>
+    <div class="close" id='Close'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</div>
 </dialog>
 
     
@@ -162,6 +181,12 @@
 
 
         <script src="/app.js"></script>
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 

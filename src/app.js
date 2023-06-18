@@ -80,7 +80,6 @@ openModal1.addEventListener("click", ()=>{
 
 modal1Close.addEventListener("click", ()=>{
     modal1.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal1.close()
 })
 
@@ -94,7 +93,6 @@ openModal2.addEventListener("click", ()=>{
 
 modal2Close.addEventListener("click", ()=>{
     modal2.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal2.close()
 })
 
@@ -108,7 +106,6 @@ openModal3.addEventListener("click", ()=>{
 
 modal3Close.addEventListener("click", ()=>{
     modal3.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal3.close()
 })
 
@@ -119,17 +116,14 @@ window.addEventListener('click', outsideClick);
 function outsideClick(e) {
   if (e.target == modal1) {
     modal1.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal1.close()
   }
   if (e.target == modal2){
     modal2.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal2.close()
   }
   if (e.target == modal3){
     modal3.classList.remove('show')
-    Body.classList.remove('body-no-scroll')
     modal3.close()
   }
  
@@ -138,3 +132,22 @@ function outsideClick(e) {
     console.log('')
 }
 
+
+// Script for product card skeleton loading 
+
+const blurDiv = document.querySelectorAll(".blur-load")
+blurDiv.forEach(div => {
+const img = div.querySelector("img")
+
+    function loaded() {
+        div.classList.add("loaded")
+    }
+
+    if (img.complete) {
+        loaded();
+    }
+
+    else {
+        img.addEventListener("load" ,loaded)
+    }
+})
